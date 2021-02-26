@@ -1,0 +1,41 @@
+@use 'variables';
+
+html{
+    height: 100%;  
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    margin-bottom: $spacing-xl;
+}
+
+nav{
+    .container{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+.row{
+    margin-bottom: $spacing-sm;
+}
+
+.container-fluid{
+    @extend .container;
+}
+
+.project{
+    max-width: 500px;
+    margin-bottom: $spacing-xl;
+    
+    &__image{
+        width: 100%;
+    }
+}
+
+.full-page{
+    height: 100%;
+}

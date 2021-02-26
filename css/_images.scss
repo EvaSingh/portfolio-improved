@@ -1,0 +1,74 @@
+.responsive{
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+}
+
+.project{
+    position: relative;
+    
+    &__overlay{
+        position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    }
+    
+    &__image{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    &:hover .project__overlay{
+        opacity: 1;
+    }
+    
+    &__description{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }  
+}
+
+.hero{
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 15%;
+    
+    &--nasa{
+        @extend .hero;
+        background-image: url(../images/nasa-hero.jpeg);
+    }
+    
+    &--decodeco{
+        @extend .hero;
+        background-image: url(../images/decodeco-hero.jpg);
+    }
+    
+    &--recycle{
+        @extend .hero;
+        background-image: url(../images/recycle-hero.jpg);
+    }
+    
+    &--rpp{
+        @extend .hero;
+        background-image: url(../images/rpp-hero.jpeg);
+    }
+    
+    &--letha{
+        @extend .hero;
+        background-image: url(../images/letha-hero.jpeg);
+    }
+    
+}

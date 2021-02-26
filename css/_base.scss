@@ -1,0 +1,41 @@
+@use 'variables';
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $font-main;
+    color: $color-main;
+    background-color: $color-bkg;
+    font-weight: 300;
+}
+
+h5{
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: $color-main;
+    
+    &:hover{
+        @extend a;    
+    }
+}    
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+p{
+    font-size: 1.5em;
+}
