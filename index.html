@@ -5,65 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://use.typekit.net/nll8oau.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Eva Singh Portfolio - Home</title>
 </head>
 <body>
-    <div class="container"></div>
-    <div class="wrapper">
-        <div class="container text-center full-page">
-            <div class="row align-self-center">
-                <div class="col">
-                    <h1>Eva Singh</h1>
-                    <h2>Frontend developer</h2>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eva Singh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span>Menu</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="index.html#projects__intro">Projects</a>
+                <a class="nav-link" href="index.html#about">About & contact</a>
+              </div>
             </div>
-            <div class="row align-self-center">
-                <div class="col">
-                    <a class="underline" href="index.html#contact">Contact me</a>
-                </div>
-            </div>
-        </div>
+         </div>
+    </nav>
 
-        <div class="container full-page">
-            <div class="row id="work>
-                <div class="col col-xl-6 col-md-8 col-sm-12">
-                    <h2>My work</h2>
-                    <p>Through my studies I have gotten to create several websites, each with a different focus. Take a look at some of them below.</p>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid justify-content-center full-page">
-            <div class="row align-self-center projects">
-
-            </div>
-        </div>
-
-        <div class="container justify-content-center full-page about">
-            <div class="row align-self-center">
-                <div class="col">
-                    <h3>About me</h3>
-                    <p>Hi, I'm Eva. I live in Trondheim with my husband and two kids. My interests are design, travel, being outdoors and of course spending as much time as possible with my family. I have a varied background from hotels, interior shops, receptions and security, but I've never really known what I want to "be". I'm currently studying Front-end development and UX Design, and my vision for the future is to help small independent businesses with design and development of websites.</p>
-                </div>
-                <div class="col">
-                    <img class="about__image" src="images/eva-singh.jpg" alt="Eva Singh image" width="400px">
-                </div>   
-             </div>      
-        </div>
-    </div>
-    
-    <div class="container text-center full-page contact" id="contact">
-        <div class="row">
+    <div class="container d-flex flex-column align-items-center justify-content-center text-center h-100">
+        <div class="row align-self-center">
             <div class="col">
-                <h3>Contact me</h3>
-                <a class="underline" href="mailto:eva@frontendlove.no" target="_blank">eva@frontendlove.no</a>
+                <h1>I design and develop websites</h1>
+            </div>
+        </div>
+        <div class="row align-self-baseline justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="container d-flex align-items-center h-100" id="projects__intro">
+        <div class="row">
+            <div class="col col-xl-6 col-md-8 col-sm-12">
+                <h2>My work</h2>
+                <p>Through my studies I have gotten to create several websites, each with a different focus. Take a look at some of them below.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
             </div>
         </div>
     </div>
-    
+
+    <div class="container justify-content-center" id="projects">
+        <div class="row align-self-center projects">
+
+        </div>
+    </div>
+
+    <div class="container d-flex align-items-center justify-content-center h-100" id="about">
+        <div class="row align-self-center">
+            <div class="col ">
+                <h3>About & contact</h3>
+                <img class="about__image" src="images/eva-singh.jpg" alt="Eva Singh image" width="400px">
+            </div>
+            <div class="col">
+                <p>Hi, I'm Eva. I live in Trondheim with my husband and two kids. My interests are design, travel, being outdoors and of course spending as much time as possible with my family. I have a varied background from hotels, interior shops, receptions and security, but I've never really known what I want to "be". I'm currently studying Front-end development and UX Design, and my vision for the future is to help small independent businesses with design and development of websites.</p>
+                <p>Get in touch:</p>
+                <p>Eva Singh</p>
+                <p>97985900</p>
+                <a class="underline" href="mailto:eva@frontendlove.no" target="_blank">eva@frontendlove.no</a>
+            </div>   
+         </div>      
+    </div>
    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="js/projects.js"></script>
